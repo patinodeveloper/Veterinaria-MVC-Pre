@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <!-- Plugins -->
+    <link href="plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="plugins/fontawesome/all.css">
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <img class ="vector" src="img/vector.png" alt="">
+    <div class = "contenedor">
+        <div class = "img">
+            <img src="img/animales.png" alt="">
+        </div>
+        <div class = "contenido-login">
+            <form action="controllers/procesar.php" method = "post">
+                <img src="img/logo.png" alt="">
+                <h2>Veterinaria</h2>
+                <div class = "input-div username">
+                    <div class = "i">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class = "div">
+                        <h5>Usuario</h5>
+                            <input type="text" class = "input" id = "username" name = "username" required>
+                    </div>
+                </div>
+                <div class = "input-div pass">
+                    <div class = "i">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Contraseña</h5>
+                        <input type="password" class = "input" id = "password" name = "password" required>
+                    </div>
+                </div>
+                <a href="">Creado por Patinho</a>
+                <button type="submit" class = "btn btn-primary">Iniciar Sesion</button>
+            </form>
+        </div>
+    </div>
+    <!-- Script personal -->
+    <script src="js/login.js"></script>
+</body>
+
+</html>
